@@ -20,7 +20,6 @@ public class AbstractComponent {
 	public AbstractComponent(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		
 	}
 	
 	@FindBy(css="[routerlink*='cart']")

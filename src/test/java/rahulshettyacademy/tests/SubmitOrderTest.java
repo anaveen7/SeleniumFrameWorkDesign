@@ -91,8 +91,5 @@ public class SubmitOrderTest extends BaseTest{
 //		
 //		return new Object[][] {{map},{map1}};
 //	}
-	
-	
-	
 
 }
