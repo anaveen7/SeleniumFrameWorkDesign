@@ -41,7 +41,7 @@ public class StepDefinationsimp extends BaseTest{
 		Boolean match=cartpage.verifyProductDisplay(productname);
 		Assert.assertTrue(match);
 		CheckoutPage checkout=cartpage.goToCheckout();
-		checkout.selectCpuntry("India");
+		checkout.selectCountry("India");
 		confirmPage=checkout.submitOrder();
 	}
 	@Then ("{string} message is displayed on confirmation page")

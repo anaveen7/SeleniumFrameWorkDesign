@@ -46,7 +46,7 @@ public class SubmitOrderTest extends BaseTest{
 		Boolean match=cartpage.verifyProductDisplay(input.get("productName"));
 		Assert.assertTrue(match);
 		CheckoutPage checkout=cartpage.goToCheckout();
-		checkout.selectCpuntry("India");
+		checkout.selectCountry("India");
 		ConfirmationPage confirmPage=checkout.submitOrder();
 		
 		String confirmMessage=confirmPage.getConfirmationMessage();

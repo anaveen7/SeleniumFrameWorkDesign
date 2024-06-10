@@ -29,12 +29,13 @@ public class CheckoutPage extends AbstractComponent{
 	@FindBy(xpath="(//button[@class='btn btn-custom'])[4]")
 	WebElement Signout;
 	
-public void selectCpuntry(String Country) {
+public void selectCountry(String Country) {
 	
 	   Actions a= new Actions(driver);
 	   a.sendKeys(country,Country).build().perform();
 	   waitForElementToAppear(By.cssSelector(".ta-results"));
-	   selectCountry.click();	
+	   JSExecutorClick(selectCountry);
+	   //selectCountry.click();	
 }
 
 public ConfirmationPage submitOrder() {
