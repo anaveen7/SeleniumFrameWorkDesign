@@ -6,6 +6,9 @@
   <include name="ErrorValidation"></include>
   </run>
   </groups>
+  <listeners>
+<listener class-name="rahulshettyacademy.TestComponents.Listners"></listener>
+</listeners>
    <test thread-count="5" name="Error Validation">
     <classes>
       <class name="rahulshettyacademy.tests.ErrorValidationTest"/>
